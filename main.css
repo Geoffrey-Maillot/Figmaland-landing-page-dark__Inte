@@ -1,12 +1,13 @@
 /*--------------------------------------------------------------------
                                 BASES
 ---------------------------------------------------------------------*/
+html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -15,19 +16,21 @@ a {
   text-decoration: none;
 }
 
-h1, h2, p, a {
+h1,
+h2,
+p,
+a {
   color: #fff;
 }
-
 
 /*--------------------------------------------------------------------
 LAYOUT
 ---------------------------------------------------------------------*/
 .container-header {
   width: 100%;
-  height: 100vh;
+  margin: 0;
+  padding: 0;
   background-color: #181818;
-  
 }
 
 .container {
@@ -37,12 +40,10 @@ LAYOUT
   margin-left: auto;
 }
 
-
-
-
 /*--------------------------------------------------------------------
                                HEADER
 ---------------------------------------------------------------------*/
+
 .header-top {
   padding-top: 20px;
   display: flex;
@@ -51,10 +52,10 @@ LAYOUT
 }
 
 .nav a {
-width: 60px;
-margin: 0 20px;
-font-weight: 500;
-transition: all 0.5s;
+  width: 60px;
+  margin: 0 20px;
+  font-weight: 500;
+  transition: all 0.5s;
 }
 
 .nav a:hover {
@@ -62,7 +63,7 @@ transition: all 0.5s;
 }
 
 .title-h1 {
-  margin:80px auto 30px auto;
+  margin: 80px auto 30px auto;
   max-width: 650px;
   text-align: center;
   font-size: 80px;
@@ -71,7 +72,7 @@ transition: all 0.5s;
 }
 
 .header-middle p {
-   margin: 0 auto 80px auto;
+  margin: 0 auto 80px auto;
   text-align: center;
   max-width: 540px;
   font-size: 1.25rem;
@@ -85,11 +86,10 @@ transition: all 0.5s;
 }
 
 .btn {
- color: #fff;
- transition: all 0.3s;
- padding: 15px 45px;
+  color: #fff;
+  transition: all 0.3s;
+  padding: 15px 45px;
 }
-
 
 .btn-transparent {
   background-color: rgba(0, 0, 0, 0);
@@ -97,43 +97,49 @@ transition: all 0.5s;
 }
 
 .btn-transparent:hover {
-  background-color: #4452FE;
-  border-color: #4452FE;
+  background-color: #4452fe;
+  border-color: #4452fe;
 }
 
-.btn-blue{
-  background-color: #4452FE;
-  border: 1px solid #4452FE;
+.btn-blue {
+  background-color: #4452fe;
+  border: 1px solid #4452fe;
 }
 
 .btn-blue:hover {
   background-color: rgba(0, 0, 0, 0);
-  border-color: #fff
+  border-color: #fff;
 }
 
 .header-middle__btn {
   margin: 10px 20px;
 }
 
+.header-bottom {
+  width: 100%;
+  max-width: 1500px;
+  min-width: 800px;
+  height: 120vh;
+  margin-left: auto;
+  margin-right: auto;
 
+  background: url(./img/img-header-top.png) center top 20px / 50% no-repeat,
+    url(./img/img-header-left.png) left -5px top 250px / 50% no-repeat,
+    url(./img/img-header-left.png) right 3px top 250px/ 50% no-repeat;
 
+  background-color: #4452fe;
+}
 
-
-/*--------------------------------------------------------------------
+/*-------------------------------------------------------------------
                             MODULES
 ---------------------------------------------------------------------*/
 .responsive-menu {
   display: none;
 }
 
-
-
-
 /*--------------------------------------------------------------------
                               RESPONSIVE
 ---------------------------------------------------------------------*/
 
 @media screen and (max-width: 860px) {
-
-
 }
