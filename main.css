@@ -1,8 +1,12 @@
 /*--------------------------------------------------------------------
                                 BASES
 ---------------------------------------------------------------------*/
-html,
+html {
+  margin: 0;
+  padding: 0;
+}
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -187,7 +191,8 @@ nav {
   display: flex;
 }
 .scroll-none {
-  overflow-y: hidden;
+position: fixed;
+overflow: scroll;
 }
 
 nav a {
@@ -195,14 +200,44 @@ nav a {
   margin: 30px 0;
   font-size: 1.5rem;
 }
+
+/*Bouton fermeture menu responsive*/
 .close-nav {
   display: block;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 10px;
+  right: 10px;
   cursor: pointer;
+  
+}
+.close-nav:after {
+content: '';
+width: 35px;
+height: 5px;
+background-color: #fff;
+border-radius: 10px;
+display: block;
+transform: rotate(45deg);
+position: absolute;
+right: 19px;
+top: 21px;
 }
 
+.close-nav:before {
+  content: '';
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: block;
+  transform: rotate(-45deg);
+  position: absolute;
+  right: 19px;
+  top: 22px;
+  }
+ 
+
+  
 .header-middle__btn-flex {
   margin-right: auto;
   margin-left: auto;
