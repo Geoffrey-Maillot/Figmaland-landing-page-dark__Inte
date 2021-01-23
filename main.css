@@ -28,6 +28,13 @@ a {
   color: #fff;
 }
 
+h2 {
+  font-size: 3.25rem;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-bottom: 1.7rem;
+}
+
 p {
   font-size: 1.25rem;
   line-height: 1.5;
@@ -53,6 +60,14 @@ LAYOUT
 
 .main {
   width: 100%;
+}
+
+.header-section {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-bottom: 5rem;
 }
 
 /*--------------------------------------------------------------------
@@ -157,32 +172,6 @@ LAYOUT
 /*--------------------------------------------------------------------
                                FEATURES
 ---------------------------------------------------------------------*/
-.features_container {
-  padding: 20px;
-}
-
-.features_chatbox-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.features_chatbox-img {
-  width: calc(70% - 5px);
-}
-
-.features_chatbox-text {
-  width: calc(30% - 5px);
-}
-
-.features_chatbox-text1 {
-}
-
-.features_chatbox-text2 {
-}
-
-.features_chatbox-text3 {
-}
 
 /*--------------------------------------------------------------------
                               RESPONSIVE
