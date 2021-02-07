@@ -59,10 +59,21 @@ LAYOUT
 .container {
   width: 100%;
   max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto 0 auto;
   padding-right: 20px;
   padding-left: 20px;
+}
+
+.section {
+  margin-bottom: 200px;
+}
+
+.gallerie-section {
+  max-width: 1300px !important;
+}
+
+.partners-section {
+  max-width: 1000px !important;
 }
 
 .main {
@@ -126,7 +137,7 @@ LAYOUT
   color: #fff;
   transition: all 0.3s;
   padding: 15px 45px;
-  width: 178px;
+  max-width: 178px;
 }
 
 .btn-transparent {
@@ -275,6 +286,160 @@ LAYOUT
 }
 
 /*--------------------------------------------------------------------
+                            GALLERIE
+---------------------------------------------------------------------*/
+
+.gallerie-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallerie_img-fit {
+  width: 225px;
+  height: 285px;
+  margin: 20px 10px 20px 10px;
+  border-radius: 10px;
+}
+
+.gallerie_img-large {
+  width: 395px;
+  height: 285px;
+  margin: 20px 10px 20px 10px;
+  border-radius: 10px;
+}
+
+.gallerie-flex_element-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.nowrap {
+  flex-wrap: nowrap !important;
+}
+
+.img-fit-1 {
+  background: url(./img/card-window-1.png) center center;
+  display: inline-block;
+}
+.img-fit-2 {
+  background: url(./img/card-window-2.png) center center;
+  display: inline-block;
+}
+.img-fit-3 {
+  background: url(./img/card-window-3.png) center center;
+  display: inline-block;
+}
+.img-fit-4 {
+  background: url(./img/card-window-4.png) center center;
+  display: inline-block;
+}
+.img-fit-5 {
+  background: url(./img/card-window-6.png) center center;
+  display: inline-block;
+  flex: none;
+}
+.img-large-1 {
+  background: url(./img/card-window-5.png) center center;
+  display: inline-block;
+}
+.img-large-2 {
+  background: url(./img/card-window-7.png) center center;
+  display: inline-block;
+}
+
+.section-btn {
+  display: block;
+  margin: 50px auto 0 auto;
+}
+
+/*--------------------------------------------------------------------
+                            PARTNERS
+---------------------------------------------------------------------*/
+.partner_partners-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners-flex_element-flex {
+  width: 50%;
+  min-width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 40px;
+}
+
+/*--------------------------------------------------------------------
+                          TESTIMONIALS
+---------------------------------------------------------------------*/
+
+.testimonials_testimonials-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.testimonials_testiminials-card {
+  max-width: 430px;
+  min-width: 300px;
+  padding: 40px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin: 10px 10px 10px 10px;
+
+  color: #fff;
+}
+.testimonials_testiminials-card > div {
+  display: inline-block;
+  margin-left: 15px;
+
+  font-size: 1em;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.testimonials_testiminials-card p {
+  margin-top: 30px;
+}
+
+/*-------------------------------------------------------------------
+                           FIGMA-LAND
+---------------------------------------------------------------------*/
+
+.figma-land-section {
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+  display: flex;
+
+  background-color: white;
+}
+
+.section-left_content {
+  width: 100%;
+  color: #fff;
+}
+
+.section-left {
+  background-color: red;
+  width: 50%;
+  height: 370px;
+  border-radius: 10px 0 0 10px;
+}
+
+.section-right {
+  width: 50%;
+  height: 370px;
+  border-radius: 0 10px 10px 0;
+  background: url(./img/figma-land.png) no-repeat;
+}
+
+/*--------------------------------------------------------------------
                               RESPONSIVE
 ---------------------------------------------------------------------*/
 
@@ -365,7 +530,9 @@ LAYOUT
     flex-direction: column;
     align-items: center;
   }
+
   /*FEATURES*/
+
   .features_chatbox-flex {
     flex-direction: column;
   }
@@ -373,7 +540,9 @@ LAYOUT
   .features_chatbox-text {
     margin-top: 30px;
   }
+
   /*CONTENT*/
+
   .contents-flex {
     flex-direction: column;
   }
@@ -391,11 +560,37 @@ LAYOUT
   .contents-card_title {
     margin: 30px 0 20px 0;
   }
+
+  /*GALLERIE*/
+
+  .hide {
+    display: none;
+  }
+
+  .img-fit-2 {
+    background: url(./img/card-responsive-2.png) center center;
+  }
+  .img-fit-3 {
+    background: url(./img/card-responsive-3.png) center center;
+  }
+  .img-fit-4 {
+    background: url(./img/card-responsive-4.png) center center;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .responsive-menu {
     top: 10px;
     right: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .partners-flex_element-flex {
+    flex-direction: column;
+  }
+
+  .partners-flex_element-flex img {
+    padding: 40px;
   }
 }
