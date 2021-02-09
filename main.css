@@ -16,6 +16,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   box-sizing: border-box;
+  background-color: #181818;
 }
 a {
   text-decoration: none;
@@ -24,6 +25,7 @@ a {
 h1,
 h2,
 h3,
+h4,
 p,
 a {
   color: #fff;
@@ -41,8 +43,14 @@ h3 {
   font-weight: 600;
 }
 
+h4 {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
 p {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   line-height: 1.5;
 }
 
@@ -53,7 +61,6 @@ LAYOUT
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #181818;
 }
 
 .container {
@@ -415,28 +422,97 @@ LAYOUT
 .figma-land-section {
   max-width: 1200px;
   margin: 0 auto 0 auto;
-  display: flex;
-
-  background-color: white;
+  padding: 0 20px 0 20px;
 }
 
-.section-left_content {
-  width: 100%;
-  color: #fff;
+.figma-land-section_contents {
+  background-color: #343434;
+  display: flex;
+  border-radius: 15px 15px 15px 15px;
 }
 
 .section-left {
-  background-color: red;
   width: 50%;
   height: 370px;
-  border-radius: 10px 0 0 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-left_content {
+  max-width: 468px;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+.section-left button {
+  margin-left: 0;
 }
 
 .section-right {
   width: 50%;
   height: 370px;
   border-radius: 0 10px 10px 0;
-  background: url(./img/figma-land.png) no-repeat;
+  background: url(./img/figma-land.png) center center no-repeat;
+  background-size: cover;
+}
+
+/*--------------------------------------------------------------------
+                              FOOTER
+---------------------------------------------------------------------*/
+.footer-section {
+  margin: 200px 0 50px 0;
+  display: flex;
+}
+
+.footer-section h4 {
+  margin-bottom: 20px;
+}
+
+.footer-section p {
+  display: inline-block;
+}
+
+.footer-section a {
+  display: block;
+  padding: 5px 0 5px 0;
+}
+
+.footer-section_flex {
+  width: 50%;
+  display: flex;
+}
+
+.footer-section_flex_item {
+  width: 33.33%;
+  flex: none;
+}
+
+.footer-section_info-sup {
+  width: 40%;
+  margin-left: auto;
+}
+
+.footer-section_info-up_item {
+  min-width: 319px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer-section_info-sup_social {
+  width: 200px;
+}
+
+.footer-section_info-sup img {
+  margin: 10px;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
 }
 
 /*--------------------------------------------------------------------
@@ -575,6 +651,55 @@ LAYOUT
   }
   .img-fit-4 {
     background: url(./img/card-responsive-4.png) center center;
+  }
+
+  /*FIGMA-LAND*/
+  .figma-land-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .figma-land-section_contents {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 0;
+  }
+
+  .section-left_content {
+    width: 376px;
+  }
+
+  .section-right {
+    min-width: 450px;
+    border-radius: 0;
+    background: url(./img/figma-land-responsive.png);
+    background-position: center;
+  }
+
+  /*FOOTER*/
+
+  .footer-section {
+    flex-direction: column;
+    padding-left: 60px;
+  }
+
+  .footer-section_flex {
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .footer-section_flex_item {
+    margin-bottom: 35px;
+  }
+
+  .footer-section h4 {
+    margin-bottom: 10px;
+  }
+
+  .footer-section_info-sup {
+    margin-left: 0;
   }
 }
 
